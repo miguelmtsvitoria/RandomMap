@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="PGCD-PT-D02N005" xmlns="">
+    <name>
+      <text>ZZZZZZ</text>
+    </name>
+    <page>
+      <id id="page" />
+      <place id="p1">
+        <name>
+          <text>pRoom0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p2">
+        <name>
+          <text>pRoom1</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p3">
+        <name>
+          <text>pRoom2</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p4">
+        <name>
+          <text>pRoom3</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p5">
+        <name>
+          <text>pRoom4</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p6">
+        <name>
+          <text>pKey1</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p7">
+        <name>
+          <text>pKey1_exists</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <transition id="t8">
+        <name>
+          <text>t8</text>
+        </name>
+      </transition>
+      <arc id="a9" source="p5" target="t8" />
+      <arc id="a10" source="t8" target="p5" />
+      <arc id="a11" source="p7" target="t8" />
+      <arc id="a12" source="t8" target="p6" />
+      <place id="p13">
+        <name>
+          <text>pRoom5</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p14">
+        <name>
+          <text>pKey0</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p15">
+        <name>
+          <text>pKey0_exists</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <transition id="t16">
+        <name>
+          <text>t16</text>
+        </name>
+      </transition>
+      <arc id="a17" source="p13" target="t16" />
+      <arc id="a18" source="t16" target="p13" />
+      <arc id="a19" source="p15" target="t16" />
+      <arc id="a20" source="t16" target="p14" />
+      <place id="p21">
+        <name>
+          <text>pRoom6</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p22">
+        <name>
+          <text>pRoom7</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p23">
+        <name>
+          <text>pRoom8</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p24">
+        <name>
+          <text>pRoom9</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p25">
+        <name>
+          <text>pRoom10</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p26">
+        <name>
+          <text>pRoom11</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p27">
+        <name>
+          <text>pRoom12</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <place id="p28">
+        <name>
+          <text>pKey0_locked</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p29">
+        <name>
+          <text>pKey0_unlocked</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <transition id="t30">
+        <name>
+          <text>t30</text>
+        </name>
+      </transition>
+      <transition id="t31">
+        <name>
+          <text>t31</text>
+        </name>
+      </transition>
+      <transition id="t32">
+        <name>
+          <text>t32</text>
+        </name>
+      </transition>
+      <arc id="a33" source="p14" target="t30" />
+      <arc id="a34" source="p28" target="t30" />
+      <arc id="a35" source="p1" target="t30" />
+      <arc id="a36" source="t30" target="p2" />
+      <arc id="a37" source="t30" target="p29" />
+      <arc id="a38" source="p1" target="t31" />
+      <arc id="a39" source="t31" target="p2" />
+      <arc id="a40" source="t31" target="p29" />
+      <arc id="a41" source="p29" target="t31" />
+      <arc id="a42" source="p29" target="t32" />
+      <arc id="a43" source="t32" target="p29" />
+      <arc id="a44" source="t32" target="p1" />
+      <arc id="a45" source="p2" target="t32" />
+      <transition id="t46">
+        <name>
+          <text>t46</text>
+        </name>
+      </transition>
+      <transition id="t47">
+        <name>
+          <text>t47</text>
+        </name>
+      </transition>
+      <arc id="a48" source="p1" target="t46" />
+      <arc id="a49" source="t46" target="p4" />
+      <arc id="a50" source="p4" target="t47" />
+      <arc id="a51" source="t47" target="p1" />
+      <transition id="t52">
+        <name>
+          <text>t52</text>
+        </name>
+      </transition>
+      <transition id="t53">
+        <name>
+          <text>t53</text>
+        </name>
+      </transition>
+      <arc id="a54" source="p1" target="t52" />
+      <arc id="a55" source="t52" target="p5" />
+      <arc id="a56" source="p5" target="t53" />
+      <arc id="a57" source="t53" target="p1" />
+      <transition id="t58">
+        <name>
+          <text>t58</text>
+        </name>
+      </transition>
+      <transition id="t59">
+        <name>
+          <text>t59</text>
+        </name>
+      </transition>
+      <arc id="a60" source="p1" target="t58" />
+      <arc id="a61" source="t58" target="p3" />
+      <arc id="a62" source="p3" target="t59" />
+      <arc id="a63" source="t59" target="p1" />
+      <transition id="t64">
+        <name>
+          <text>t64</text>
+        </name>
+      </transition>
+      <transition id="t65">
+        <name>
+          <text>t65</text>
+        </name>
+      </transition>
+      <arc id="a66" source="p2" target="t64" />
+      <arc id="a67" source="t64" target="p13" />
+      <arc id="a68" source="p13" target="t65" />
+      <arc id="a69" source="t65" target="p2" />
+      <transition id="t70">
+        <name>
+          <text>t70</text>
+        </name>
+      </transition>
+      <transition id="t71">
+        <name>
+          <text>t71</text>
+        </name>
+      </transition>
+      <arc id="a72" source="p3" target="t70" />
+      <arc id="a73" source="t70" target="p21" />
+      <arc id="a74" source="p21" target="t71" />
+      <arc id="a75" source="t71" target="p3" />
+      <place id="p76">
+        <name>
+          <text>pKey1_locked</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p77">
+        <name>
+          <text>pKey1_unlocked</text>
+        </name>
+        <initialMarking>
+          <text>0</text>
+        </initialMarking>
+      </place>
+      <transition id="t78">
+        <name>
+          <text>t78</text>
+        </name>
+      </transition>
+      <transition id="t79">
+        <name>
+          <text>t79</text>
+        </name>
+      </transition>
+      <transition id="t80">
+        <name>
+          <text>t80</text>
+        </name>
+      </transition>
+      <arc id="a81" source="p6" target="t78" />
+      <arc id="a82" source="p76" target="t78" />
+      <arc id="a83" source="p4" target="t78" />
+      <arc id="a84" source="t78" target="p22" />
+      <arc id="a85" source="t78" target="p77" />
+      <arc id="a86" source="p4" target="t79" />
+      <arc id="a87" source="t79" target="p22" />
+      <arc id="a88" source="t79" target="p77" />
+      <arc id="a89" source="p77" target="t79" />
+      <arc id="a90" source="p77" target="t80" />
+      <arc id="a91" source="t80" target="p77" />
+      <arc id="a92" source="t80" target="p4" />
+      <arc id="a93" source="p22" target="t80" />
+      <transition id="t94">
+        <name>
+          <text>t94</text>
+        </name>
+      </transition>
+      <transition id="t95">
+        <name>
+          <text>t95</text>
+        </name>
+      </transition>
+      <arc id="a96" source="p5" target="t94" />
+      <arc id="a97" source="t94" target="p23" />
+      <arc id="a98" source="p23" target="t95" />
+      <arc id="a99" source="t95" target="p5" />
+      <transition id="t100">
+        <name>
+          <text>t100</text>
+        </name>
+      </transition>
+      <transition id="t101">
+        <name>
+          <text>t101</text>
+        </name>
+      </transition>
+      <arc id="a102" source="p21" target="t100" />
+      <arc id="a103" source="t100" target="p24" />
+      <arc id="a104" source="p24" target="t101" />
+      <arc id="a105" source="t101" target="p21" />
+      <transition id="t106">
+        <name>
+          <text>t106</text>
+        </name>
+      </transition>
+      <arc id="a107" source="p23" target="t106" />
+      <arc id="a108" source="t106" target="p25" />
+      <transition id="t109">
+        <name>
+          <text>t109</text>
+        </name>
+      </transition>
+      <transition id="t110">
+        <name>
+          <text>t110</text>
+        </name>
+      </transition>
+      <arc id="a111" source="p24" target="t109" />
+      <arc id="a112" source="t109" target="p26" />
+      <arc id="a113" source="p26" target="t110" />
+      <arc id="a114" source="t110" target="p24" />
+      <transition id="t115">
+        <name>
+          <text>t115</text>
+        </name>
+      </transition>
+      <arc id="a116" source="p26" target="t115" />
+      <arc id="a117" source="t115" target="p27" />
+    </page>
+  </net>
+</pnml>

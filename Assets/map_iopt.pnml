@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<Snoopy revision="0" version="0">
+  <pnml>
+    <net id="1" name="map3" type="IOPT">
+      <input />
+      <output />
+      <variable />
+      <place id="2">
+        <name>
+          <text>Room0</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>1</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="3">
+        <name>
+          <text>Room1</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="4">
+        <name>
+          <text>Room2</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="5">
+        <name>
+          <text>Room3</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="6">
+        <name>
+          <text>Room4</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="7">
+        <name>
+          <text>Key1</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="8">
+        <name>
+          <text>Key1_exists</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>1</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <transition id="9">
+        <name>
+          <text>t9</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="10" source="6" target="9">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="11" source="9" target="6">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="12" source="8" target="9">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="13" source="9" target="7">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <place id="14">
+        <name>
+          <text>Room5</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="15">
+        <name>
+          <text>Key0</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="16">
+        <name>
+          <text>Key0_exists</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>1</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <transition id="17">
+        <name>
+          <text>t17</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="18" source="14" target="17">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="19" source="17" target="14">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="20" source="16" target="17">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="21" source="17" target="15">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <place id="22">
+        <name>
+          <text>Room6</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="23">
+        <name>
+          <text>Room7</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="24">
+        <name>
+          <text>Room8</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="25">
+        <name>
+          <text>Room9</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="26">
+        <name>
+          <text>Room10</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="27">
+        <name>
+          <text>Room11</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="28">
+        <name>
+          <text>Room12</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="29">
+        <name>
+          <text>Key0_locked</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>1</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="30">
+        <name>
+          <text>Key0_unlocked</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <transition id="31">
+        <name>
+          <text>t31</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="32">
+        <name>
+          <text>t32</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="33">
+        <name>
+          <text>t33</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="34" source="15" target="31">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="35" source="29" target="31">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="36" source="2" target="31">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="37" source="31" target="3">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="38" source="31" target="30">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="39" source="2" target="32">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="40" source="32" target="3">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="41" source="32" target="30">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="42" source="30" target="32">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="43" source="30" target="33">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="44" source="33" target="30">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="45" source="33" target="2">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="46" source="3" target="33">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="47">
+        <name>
+          <text>t47</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="48">
+        <name>
+          <text>t48</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="49" source="2" target="47">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="50" source="47" target="5">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="51" source="5" target="48">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="52" source="48" target="2">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="53">
+        <name>
+          <text>t53</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="54">
+        <name>
+          <text>t54</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="55" source="2" target="53">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="56" source="53" target="6">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="57" source="6" target="54">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="58" source="54" target="2">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="59">
+        <name>
+          <text>t59</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="60">
+        <name>
+          <text>t60</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="61" source="2" target="59">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="62" source="59" target="4">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="63" source="4" target="60">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="64" source="60" target="2">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="65">
+        <name>
+          <text>t65</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="66">
+        <name>
+          <text>t66</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="67" source="3" target="65">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="68" source="65" target="14">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="69" source="14" target="66">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="70" source="66" target="3">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="71">
+        <name>
+          <text>t71</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="72">
+        <name>
+          <text>t72</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="73" source="4" target="71">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="74" source="71" target="22">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="75" source="22" target="72">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="76" source="72" target="4">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <place id="77">
+        <name>
+          <text>Key1_locked</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>1</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <place id="78">
+        <name>
+          <text>Key1_unlocked</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <initialMarking>
+          <text>0</text>
+          <graphics>
+            <offset x="0" y="-1" />
+          </graphics>
+        </initialMarking>
+        <bound>
+          <text>3</text>
+        </bound>
+        <graphics>
+          <position />
+        </graphics>
+      </place>
+      <transition id="79">
+        <name>
+          <text>t79</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="80">
+        <name>
+          <text>t80</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="81">
+        <name>
+          <text>t81</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="82" source="7" target="79">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="83" source="77" target="79">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="84" source="5" target="79">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="85" source="79" target="23">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="86" source="79" target="78">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="87" source="5" target="80">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="88" source="80" target="23">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="89" source="80" target="78">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="90" source="78" target="80">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="91" source="78" target="81">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="92" source="81" target="78">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="93" source="81" target="5">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="94" source="23" target="81">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="95">
+        <name>
+          <text>t95</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="96">
+        <name>
+          <text>t96</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="97" source="6" target="95">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="98" source="95" target="24">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="99" source="24" target="96">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="100" source="96" target="6">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="101">
+        <name>
+          <text>t101</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="102">
+        <name>
+          <text>t102</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="103" source="22" target="101">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="104" source="101" target="25">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="105" source="25" target="102">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="106" source="102" target="22">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="107">
+        <name>
+          <text>t107</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="108" source="24" target="107">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="109" source="107" target="26">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="110">
+        <name>
+          <text>t110</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <transition id="111">
+        <name>
+          <text>t111</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="112" source="25" target="110">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="113" source="110" target="27">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="114" source="27" target="111">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="115" source="111" target="25">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <transition id="116">
+        <name>
+          <text>t116</text>
+          <graphics>
+            <offset x="-10" y="20" />
+          </graphics>
+        </name>
+        <comment>
+          <graphics>
+            <offset x="-30" y="20" />
+          </graphics>
+        </comment>
+        <priority>1</priority>
+        <graphics>
+          <position />
+        </graphics>
+        <inputEvents />
+        <outputEvents />
+      </transition>
+      <arc id="117" source="27" target="116">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+      <arc id="118" source="116" target="28">
+        <type>normal</type>
+        <inscription>
+          <graphics>
+            <offset page="1" x="-5" y="12" />
+          </graphics>
+          <value>1</value>
+        </inscription>
+        <graphics />
+      </arc>
+    </net>
+  </pnml>
+</Snoopy>

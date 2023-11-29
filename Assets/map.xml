@@ -1,0 +1,33 @@
+<map>
+  <layout>
+    <dungeons>
+      <room roomName="Room0" state="Initial" key="" />
+      <room roomName="Room1" state="Intermedium" key="" />
+      <room roomName="Room2" state="Intermedium" key="" />
+      <room roomName="Room3" state="Intermedium" key="" />
+      <room roomName="Room4" state="Intermedium" key="Key1" />
+      <room roomName="Room5" state="Intermedium" key="Key0" />
+      <room roomName="Room6" state="Intermedium" key="" />
+      <room roomName="Room7" state="Intermedium" key="" />
+      <room roomName="Room8" state="Intermedium" key="" />
+      <room roomName="Room9" state="Intermedium" key="" />
+      <room roomName="Room10" state="Intermedium" key="" />
+      <room roomName="Room11" state="Intermedium" key="" />
+      <room roomName="Room12" state="Goal" key="" />
+    </dungeons>
+    <transitions>
+      <transition source="Room0" destination="Room1" bidirectional="True" keyNeeded="Key0" />
+      <transition source="Room0" destination="Room3" bidirectional="True" keyNeeded="" />
+      <transition source="Room0" destination="Room4" bidirectional="True" keyNeeded="" />
+      <transition source="Room0" destination="Room2" bidirectional="True" keyNeeded="" />
+      <transition source="Room1" destination="Room5" bidirectional="True" keyNeeded="" />
+      <transition source="Room2" destination="Room6" bidirectional="True" keyNeeded="" />
+      <transition source="Room3" destination="Room7" bidirectional="True" keyNeeded="Key1" />
+      <transition source="Room4" destination="Room8" bidirectional="True" keyNeeded="" />
+      <transition source="Room6" destination="Room9" bidirectional="True" keyNeeded="" />
+      <transition source="Room8" destination="Room10" bidirectional="False" keyNeeded="" />
+      <transition source="Room9" destination="Room11" bidirectional="True" keyNeeded="" />
+      <transition source="Room11" destination="Room12" bidirectional="False" keyNeeded="" />
+    </transitions>
+  </layout>
+</map>
